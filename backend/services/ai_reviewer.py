@@ -1,7 +1,7 @@
 import asyncio
 import json
 
-async def analyze_code(code: str, language: str) -> dict:
+async def analyze_code(code: str, language: str, api_key: str = None) -> dict:
     """
     Mock AI Code Reviewer.
     Returns a structured dictionary formatted closely to what Claude would return based on the required prompt.
